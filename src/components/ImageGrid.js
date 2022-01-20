@@ -1,4 +1,5 @@
 import React from "react"
+import { connect } from "react-redux"
 
 const ImageGrid = () => {
   return (
@@ -8,5 +9,11 @@ const ImageGrid = () => {
   )
 }
 
-export default ImageGrid;
+const mapStateToProps = ({ isLoading, images, error }) => ({
+  isLoading,
+  images,
+  error
+})
+
+export default connect(mapStateToProps)(ImageGrid);
 
