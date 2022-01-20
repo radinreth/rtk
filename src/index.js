@@ -3,10 +3,16 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { Provider } from "react-redux";
+import { createStore } from "redux";
+
+// const store = createStore();
+// UNSPLASH_ACCESS_KEY=aJFFTDkdcLsaqOolF2G2X9P2R6Hz7de_2dRXUTGTFd4
+// UNSPLASH_SECRET_KEY=pQtsFg1rcAnVmnswzdtoZldqNugr6u9oQzkR_iokouM
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+      <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
